@@ -277,3 +277,23 @@ body{
   color: var(--muted);
   font-weight:900;
 }
+/* --- FORCE PHOTO GALLERY SMALL --- */
+.gallery,
+.gallery-grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+  gap: 12px !important;
+  justify-items: center !important;
+}
+
+.gallery img,
+.gallery-grid img,
+.gallery-item img {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 12px !important;
+}
