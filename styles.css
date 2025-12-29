@@ -422,8 +422,8 @@ details p{
 .card img,
 .gallery img,
 .item-images img {
-  width: 100px !important;
-  height: 100px !important;
+  width: 180px !important;
+  height: 180px !important;
   object-fit: cover !important;
   display: block !important;
   margin: 10px auto 0 !important;
