@@ -277,23 +277,54 @@ body{
   color: var(--muted);
   font-weight:900;
 }
-/* --- FORCE PHOTO GALLERY SMALL --- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Any images inside cards, galleries, or image sections */
+.card img,
+.grid img,
+.gallery img,
+.gallery-grid img,
+.gallery-item img,
+.item-images img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 10px auto 0 !important;
+  border-radius: 12px !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Any images inside cards, galleries, or image sections */
+.card img,
+.grid img,
+.gallery img,
+.gallery-grid img,
+.gallery-item img,
+.item-images img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 10px auto 0 !important;
+  border-radius: 12px !important;
+}
+
+/* Make gallery layout behave nicely (keeps original vibe) */
 .gallery,
 .gallery-grid {
   max-width: var(--max);
   margin: 0 auto;
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
-  gap: 12px !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  gap: 14px !important;
   justify-items: center !important;
-}
-
-.gallery img,
-.gallery-grid img,
-.gallery-item img {
-  width: 150px !important;
-  height: 150px !important;
-  object-fit: cover !important;
-  display: block !important;
-  border-radius: 12px !important;
 }
