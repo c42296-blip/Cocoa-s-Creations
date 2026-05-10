@@ -325,3 +325,28 @@ h1 {
     gap: 10px;
   }
 }
+/* Meet the Maker image */
+#meet img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin: 16px auto 0;
+}
+
+/* Gallery layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
